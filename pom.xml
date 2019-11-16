@@ -29,8 +29,7 @@
 				<executions>
 					<execution>
 						<goals>
-							<goal>compile</goal>
-							<goal>testCompile</goal>
+							<goal>install</goal>
 						</goals>
 					</execution>
 				</executions>
