@@ -22,6 +22,23 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
       </plugin>
+     <plugin>
+        <groupId>com.spotify</groupId>
+             <artifactId>dockerfile-maven-plugin</artifactId>
+             <version>1.4.3</version>
+             <executions>
+                 <execution>
+                     <id>default</id>
+                     <goals>
+                         <goal>build</goal>
+                     </goals>
+                 </execution>
+             </executions>
+             <configuration>
+             <repository>https://cloud.docker.com/repository/registry-1.docker.io/sumatata/demo_maven</repository>
+                 <tag>${project.version}</tag>
+             </configuration>
+         </plugin>   
     </plugins>
   </build>
 </project>
